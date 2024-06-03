@@ -1,8 +1,5 @@
 package main
 
-// A simple example demonstrating the use of multiple text input components
-// from the Bubbles component library.
-
 import (
 	"fmt"
 	"os"
@@ -14,16 +11,10 @@ import (
 )
 
 var (
-	// focusedStyle  = lipgloss.NewStyle().Foreground(lipgloss.Color("205"))
-	blurredStyle = lipgloss.NewStyle().Foreground(lipgloss.Color("240"))
-	defaultStyle = lipgloss.NewStyle().Foreground(lipgloss.Color("240"))
-	focusedStyle = lipgloss.NewStyle().Foreground(lipgloss.Color("fff"))
-	inputStyle   = lipgloss.NewStyle()
-	// Border(lipgloss.NormalBorder()).
-	// BorderForeground(lipgloss.Color("fff")).
-	// PaddingBottom(1)
-	// noStyle      = lipgloss.NewStyle()
-
+	blurredStyle  = lipgloss.NewStyle().Foreground(lipgloss.Color("240"))
+	defaultStyle  = lipgloss.NewStyle().Foreground(lipgloss.Color("240"))
+	focusedStyle  = lipgloss.NewStyle().Foreground(lipgloss.Color("fff"))
+	inputStyle    = lipgloss.NewStyle()
 	blurredButton = fmt.Sprintf("[%s]", blurredStyle.Render("Submit"))
 	focusedButton = focusedStyle.Copy().Render("[Submit]")
 )
